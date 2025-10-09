@@ -19,7 +19,13 @@ def main():
     #===============================
     # Write your code here
 
-
+    shout = input("Shout: ")
+    # print all in one line
+    print(f"{shout} {shout} {shout}\n")
+    # print each on a new line
+    print(shout)
+    print(shout)
+    print(shout)
 
 
     # End of your code here
