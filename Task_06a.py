@@ -33,7 +33,21 @@ def main():
     x="Task6a"
     #===============================
     # Write your code here
-    
+    message = input("Say: ")
+    parts = message.rsplit(' ', 1)
+    if len(parts) > 1:
+        prefix = parts[0] + ' '
+        last_word = parts[1]
+    else:
+        prefix = ''
+        last_word = parts[0]
+    if last_word:
+        last_char = last_word[-1]
+        modified = last_word + last_char * 5
+    else:
+        modified = last_word
+    output = prefix + modified + '!'
+    print(output)
 
     # End of your code here
     #===============================
